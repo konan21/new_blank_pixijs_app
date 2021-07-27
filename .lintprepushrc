@@ -1,0 +1,11 @@
+{
+  "base": "release/develop",
+  "tasks": {
+    "*.(js|ts)": [
+      "eslint --fix"
+    ],
+    "*.+(js|json|ts|html|scss|css)": [
+      "prettier --write"
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+	"compilerOptions": {
+		"strict": true,
+		"module": "commonjs",
+		"esModuleInterop": true,
+		"sourceMap": true,
+		"allowJs": true,
+		"target": "ES2015",
+		"lib": ["DOM", "ES2015"],
+		"declaration": false,
+		"outDir": "./dist/",
+		"noImplicitAny": true,
+		"strictNullChecks": false,
+		"strictPropertyInitialization": false,
+		"typeRoots": ["node_modules/@types"],
+		"types": ["gsap", "jasmine", "lodash", "platform", "signals"],
+		"resolveJsonModule": true
+	},
+	"include": ["./src/**/*.ts"],
+	"exclude": []
+}
