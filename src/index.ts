@@ -1,7 +1,7 @@
 import {VERSION} from "pixi.js";
-import {initPixie} from "./spine";
+import {initParticlesExplosion} from "./particlesExplosion";
 
-initPixie();
+initParticlesExplosion();
 
 // eslint-disable-next-line no-console
 console.log(VERSION);

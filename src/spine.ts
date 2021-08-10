@@ -1,5 +1,5 @@
-import {Spine} from "pixi-spine";
-import {Application, Loader, Sprite} from "pixi.js";
+import {Application, PixiLoader as Loader, Sprite} from "./pixi";
+import {Spine} from "./pixi/spine";
 
 export function initPixie(): void {
 	const externalUrl = "https://pixijs.io/examples/";
@@ -41,7 +41,7 @@ export function initPixie(): void {
 
 		pixie.scale.x = pixie.scale.y = scale;
 
-		app.stage.addChild(pixie);
+		app.stage.addChild(pixie as any);
 
 		pixie.stateData.setMix("running", "jump", 0.2);
 		pixie.stateData.setMix("jump", "running", 0.4);

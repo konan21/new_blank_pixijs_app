@@ -1,19 +1,28 @@
 {
 	"compilerOptions": {
 		"strict": true,
-		"module": "commonjs",
+		"module": "CommonJS",
+		"moduleResolution": "node",
 		"esModuleInterop": true,
-		"sourceMap": true,
+		"inlineSources": true,
+		"inlineSourceMap": true,
 		"allowJs": true,
-		"target": "ES2015",
-		"lib": ["DOM", "ES2015"],
-		"declaration": false,
-		"outDir": "./dist/",
+		"target": "ES5",
+		"lib": ["DOM", "ES5", "ES2015.Collection", "ES2015.Promise"],
+		// "skipLibCheck": true,
+		"declaration": true,
+		"outDir": "lib",
+		"rootDir": "src",
 		"noImplicitAny": true,
 		"strictNullChecks": false,
 		"strictPropertyInitialization": false,
+		"baseUrl": "./",
+		"paths": {
+			// https://github.com/pixijs/pixi.js/issues/7305
+			"mini-signals": ["node_modules/resource-loader/typings/mini-signals.d.ts"]
+		},
 		"typeRoots": ["node_modules/@types"],
-		"types": ["gsap", "jasmine", "lodash", "platform", "signals"],
+		"types": [],
 		"resolveJsonModule": true
 	},
 	"include": ["./src/**/*.ts"],

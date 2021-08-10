@@ -1,4 +1,4 @@
-import {Application, Container, Sprite, Texture} from "pixi.js";
+import {Application, Container, Sprite, Texture} from "./pixi";
 
 export function initBunny(): void {
 	const app = new Application({
@@ -10,7 +10,7 @@ export function initBunny(): void {
 	document.body.appendChild(app.view);
 
 	const container: Container = new Container();
-	// container.declaredHeight = 150;
+	container.declaredHeight = 150;
 
 	app.stage.addChild(container);
 
